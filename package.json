@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Portfolio website.",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -16,14 +16,15 @@
   "dependencies": {
     "gatsby": "^3.13.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
     "prettier": "2.4.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/stevmwhitfield/portfolio.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
