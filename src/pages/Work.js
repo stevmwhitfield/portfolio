@@ -1,7 +1,12 @@
-import React from "react"
+import React from "react";
+import Layout from "../components/Layout";
 
-const Work = () => {
-  return <div></div>
-}
+const WorkPage = () => {
+  return (
+    <Layout>
+      <h1>Work Page</h1>
+    </Layout>
+  );
+};
 
-export default Work
+export default WorkPage;
