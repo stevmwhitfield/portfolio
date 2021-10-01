@@ -1,0 +1,66 @@
+@import "vars.module.scss";
+
+#footer {
+    padding-bottom: 7.2rem;
+    display: flex;
+    flex-direction: column;
+
+    #about, #social {
+        padding-bottom: 2.4rem;
+    }
+
+    #about h4 {
+        padding-bottom: 0.25em;
+    }
+
+    #social {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+
+        svg {
+            font-size: 3.2rem;
+            color: $clr-primary;
+        }
+    }
+
+    #copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    #footer {
+        padding-bottom: 3.2rem;
+        display: grid;
+        grid-template-areas: "about about"
+                             "copyright social";
+        
+        #about {
+            padding-bottom: 0;
+            grid-area: about;
+            max-width: 42rem;
+        }
+
+        #copyright {
+            padding-bottom: 0;
+            grid-area: copyright;
+            align-self: end;
+            text-align: start;
+        }
+
+        #social {
+            padding: 0;
+            grid-area: social;
+            justify-self: end;
+            
+            display: inline-block;
+
+            svg {
+                font-size: 4.8rem;
+                margin-left: 6.4rem;
+            }
+        }
+    }
+}
