@@ -1,8 +1,11 @@
 import React from "react";
 
+import * as styles from "../styles/Skills.module.scss";
+
 const Skills = () => {
   return (
-    <section>
+    <section id={styles.skills}>
+      <div id="skills"></div>
       <h2>Skills</h2>
       <article>
         <h3>Technical Skills</h3>
