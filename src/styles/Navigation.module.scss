@@ -1,0 +1,113 @@
+@import "vars.module.scss";
+
+#nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: $clr-primary;
+  width: 100%;
+  height: 6.4rem;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 0.6rem;
+
+    .nav-item {
+      display: inline;
+      justify-self: center;
+      align-self: center;
+      width: 100%;
+
+      .nav-link {
+        display: inline-block;
+        font-size: 1.8rem;
+        padding: 0 0rem;
+        width: 100%;
+        text-align: center;
+
+        svg {
+          display: block;
+          font-size: 3.2rem;
+          margin: 0 auto;
+        }
+      }
+
+      .active {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.btn {
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+  #nav {
+    position: relative;
+    background-color: transparent;
+    height: auto;
+
+    ul {
+      display: block;
+      padding: 0;
+
+      .nav-item {
+        margin-right: 7.2rem;
+        width: auto;
+
+        .nav-link {
+          font-size: 2.4rem;
+          width: auto;
+          transition: 0.3s ease;
+
+          &:hover {
+            color: darken($clr-primary, 10);
+          }
+
+          &:active {
+            color: darken($clr-primary, 20);
+          }
+
+          svg {
+            display: none;
+          }
+        }
+        .active {
+          color: $clr-primary;
+        }
+      }
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 4px solid $clr-primary;
+    border-radius: 0.4rem;
+    padding: 1.2rem 2.8rem;
+
+    color: $clr-light;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: "Ubuntu Mono", monospace;
+
+    transition: 0.5s ease;
+
+    &:hover {
+      background-color: $clr-light;
+    }
+
+    &.btn-solid {
+      background-color: $clr-primary;
+      border-color: $clr-primary;
+      color: $clr-light;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

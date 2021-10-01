@@ -6,5 +6,13 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
-}
+  plugins: [
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassRuleTest: /\.global\.s(a|c)ss$/,
+        sassRuleModulesTest: /\.module\.s(a|c)ss$/,
+      },
+    },
+  ],
+};

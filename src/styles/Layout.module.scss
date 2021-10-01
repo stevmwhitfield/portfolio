@@ -1,0 +1,99 @@
+@import "../../node_modules/scss-reset/reset";
+@import "vars.module.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap");
+
+html {
+  font-size: $fs-root;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: $clr-dark;
+  color: $clr-light;
+}
+
+h1 {
+  font-size: $fs-sm-h1;
+}
+
+h2 {
+  font-size: $fs-sm-h2;
+}
+
+h3 {
+  font-size: $fs-sm-h3;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+h4 {
+  font-size: $fs-sm-h4;
+}
+
+p {
+  font-size: $fs-sm-p;
+}
+
+a {
+  text-decoration: none;
+  color: $clr-light;
+}
+
+// Tablet
+@media screen and (min-width: 30em) {
+  h1 {
+    font-size: $fs-md-h1;
+  }
+
+  h2 {
+    font-size: $fs-md-h2;
+  }
+
+  h3 {
+    font-size: $fs-md-h3;
+    font-family: "Ubuntu Mono", monospace;
+  }
+
+  h4 {
+    font-size: $fs-md-h4;
+  }
+
+  p {
+    font-size: $fs-md-p;
+  }
+}
+
+// Desktop
+@media screen and (min-width: 64em) {
+  h1 {
+    font-size: $fs-h1;
+  }
+
+  h2 {
+    font-size: $fs-h2;
+  }
+
+  h3 {
+    font-size: $fs-h3;
+    font-family: "Ubuntu Mono", monospace;
+  }
+
+  h4 {
+    font-size: $fs-h4;
+  }
+
+  p {
+    font-size: $fs-p;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex-grow: 1;
+    width: 100%;
+    height: 100vh;
+  }
+}
