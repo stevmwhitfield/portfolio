@@ -40,8 +40,21 @@ const Navigation = () => {
           </li>
         </ul>
       </nav>
-      <a className={styles.btn} href="/">
+      <a
+        className={styles.btn}
+        href="https://github.com/stevmwhitfield"
+        target="_blank"
+        rel="noreferrer"
+      >
         GitHub
+      </a>
+      <a
+        className={`${styles.btn} ${styles.btnSolid}`}
+        href="/StevenWhitfield_Resume_2021.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Resume
       </a>
     </>
   );

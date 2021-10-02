@@ -8,13 +8,14 @@ import Divider from "../components/Divider";
 import * as styles from "../styles/success.module.scss";
 import { navigate } from "gatsby-link";
 
-const success = () => {
+const SuccessPage = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/contact");
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <Layout>
       <Helmet>
@@ -29,4 +30,4 @@ const success = () => {
   );
 };
 
-export default success;
+export default SuccessPage;
