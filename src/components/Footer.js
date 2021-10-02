@@ -19,17 +19,14 @@ const Footer = () => {
         </p>
       </div>
       <div id={styles.social}>
-        <a href="github.com" target="_blank">
+        <a href="https://github.com/stevmwhitfield" target="_blank">
           <i class="fab fa-github"></i>
-          {/* GitHub */}
         </a>
-        <a href="linkedin.com" target="_blank">
+        <a href="https://www.linkedin.com/in/stevenmwhitfield/" target="_blank">
           <i class="fab fa-linkedin"></i>
-          {/* LinkedIn */}
         </a>
-        <a href="twitter.com" target="_blank">
+        <a href="https://twitter.com/stevmwhitfield" target="_blank">
           <i class="fab fa-twitter"></i>
-          {/* Twitter */}
         </a>
       </div>
       <div id={styles.copyright}>
