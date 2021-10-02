@@ -1,10 +1,13 @@
+// Colors
 $clr-dark: #262626;
 $clr-light: #fff;
 $clr-primary: #03daa9;
 
+// Fonts
 $font-normal: "Ubuntu", sans-serif;
 $font-mono: "Ubuntu Mono", monospace;
 
+// HMTL
 $fs-root: 62.5%;
 
 // Mobile
@@ -27,3 +30,6 @@ $fs-h2: 6.4rem;
 $fs-h3: 3.6rem;
 $fs-h4: 2.4rem;
 $fs-p: 1.6rem;
+
+// Card box shadow
+$card-shadow: 0 1.2rem 3rem rgba(3, 218, 169, 0.1);

@@ -2,6 +2,7 @@
 
 #nav {
   position: fixed;
+  z-index: 1000;
   bottom: 0;
   left: 0;
   background: $clr-primary;
@@ -93,11 +94,17 @@
     font-size: 2.4rem;
     font-weight: 700;
     font-family: "Ubuntu Mono", monospace;
-
-    transition: 0.5s ease;
+    transition: 0.3s all;
 
     &:hover {
-      background-color: $clr-light;
+      background-color: darken($clr-primary, 10);
+      border-color: darken($clr-primary, 10);
+    }
+
+    &:active {
+      transition: 0.2s all;
+      background-color: darken($clr-primary, 20);
+      border-color: darken($clr-primary, 20);
     }
 
     &.btn-solid {

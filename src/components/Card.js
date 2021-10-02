@@ -1,13 +1,21 @@
 import React from "react";
 
+import * as styles from "../styles/Card.module.scss";
+
 const Card = ({ img, title, description, live, github }) => {
   return (
-    <div>
+    <div className={styles.card}>
       <img src={img} alt={title} />
-      <h4>{title}</h4>
-      <p>{description}</p>
-      <a href={live}>Live Demo</a>
-      <a href={github}>GitHub</a>
+      <div className={styles.content}>
+        <h4>{title}</h4>
+        <p>{description}</p>
+        <a className={styles.btnSolid} href={live}>
+          Live Site
+        </a>
+        <a className={styles.btn} href={github}>
+          GitHub
+        </a>
+      </div>
     </div>
   );
 };

@@ -8,9 +8,14 @@ const Footer = () => {
       <div id={styles.about}>
         <h4>About Me</h4>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
-          doloremque consectetur alias, tempore similique a cum perferendis
-          mollitia natus voluptas assumenda voluptatibus in saepe.
+          My passion for development started in middle school. I had just
+          discovered what programming was and jumped head-first into C++.
+          Needless to say I was intimidated and soon switched to Python to learn
+          the basics.
+        </p>
+        <p>
+          When I'm not coding, you might find me playing video games with
+          friends or learning a new musical piece on my keyboard.
         </p>
       </div>
       <div id={styles.social}>
@@ -19,11 +24,11 @@ const Footer = () => {
           {/* GitHub */}
         </a>
         <a href="linkedin.com" target="_blank">
-        <i class="fab fa-linkedin"></i>
+          <i class="fab fa-linkedin"></i>
           {/* LinkedIn */}
         </a>
         <a href="twitter.com" target="_blank">
-        <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitter"></i>
           {/* Twitter */}
         </a>
       </div>

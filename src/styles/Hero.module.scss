@@ -1,6 +1,10 @@
 @import "vars.module.scss";
 
 #hero {
+  width: 100%;
+  max-width: 154.4rem;
+  margin: 0 auto;
+
   padding-top: 9.6rem;
   text-align: center;
 
@@ -42,7 +46,4 @@
       height: 100%;
     }
   }
-}
-
-@media screen and (min-width: 48em) {
 }
