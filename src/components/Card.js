@@ -9,7 +9,12 @@ const Card = ({ img, title, description, live, github }) => {
       <div className={styles.content}>
         <h4>{title}</h4>
         <p>{description}</p>
-        <a className={styles.btnSolid} href={live}>
+        <a
+          className={styles.btnSolid}
+          href={live}
+          target="_blank"
+          rel="noreferrer"
+        >
           Live Site
         </a>
         <a
