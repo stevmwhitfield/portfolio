@@ -12,7 +12,12 @@ const Card = ({ img, title, description, live, github }) => {
         <a className={styles.btnSolid} href={live}>
           Live Site
         </a>
-        <a className={styles.btn} href={github}>
+        <a
+          className={styles.btn}
+          href={github}
+          target="_blank"
+          rel="noreferrer"
+        >
           GitHub
         </a>
       </div>
