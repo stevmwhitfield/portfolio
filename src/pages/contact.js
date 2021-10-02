@@ -9,7 +9,10 @@ const ContactPage = () => {
         <meta charSet="utf-8" />
         <title>Contact Me | Steven Whitfield</title>
         <meta name="description" content="Get in touch." />
-        {/* <link rel="canonical" href="https://stevenwhitfield.netlify.app/contact" /> */}
+        <link
+          rel="canonical"
+          href="https://stevenwhitfield.netlify.app/contact"
+        />
       </Helmet>
       <h1>Contact Page</h1>
     </Layout>
