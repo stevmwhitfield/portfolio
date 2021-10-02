@@ -12,7 +12,7 @@ const WorkPage = () => {
           name="description"
           content="A collection of my works and projects."
         />
-        <link rel="canonical" href="https://stevenwhitfield.netlify.app/work" />
+        {/* <link rel="canonical" href="https://stevenwhitfield.netlify.app/work" /> */}
       </Helmet>
       <h1>Work Page</h1>
     </Layout>
