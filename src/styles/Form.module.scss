@@ -29,12 +29,13 @@
   input {
     font-size: 1.6rem;
     padding: 0.5em 1em;
-    margin-bottom: 0.8rem;
+    margin: 0.8rem 0;
   }
 
   textarea {
     font-size: 1.6rem;
     padding: 1em;
+    margin-top: 0.8rem;
     resize: vertical;
   }
 
