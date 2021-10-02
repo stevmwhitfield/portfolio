@@ -11,6 +11,7 @@ const Card = ({ img, title, description, live, github }) => {
         <p>{description}</p>
         <a
           className={styles.btnSolid}
+          style={live === "" ? { visibility: "hidden" } : null}
           href={live}
           target="_blank"
           rel="noreferrer"
