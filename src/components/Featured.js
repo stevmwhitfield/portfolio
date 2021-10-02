@@ -1,35 +1,28 @@
 import React from "react";
 import Card from "./Card";
 
+import { cards } from "../data/cards";
 import * as styles from "../styles/Featured.module.scss";
-import Img from "../assets/card-chawlamedia.png";
 
 const Featured = () => {
+  const featuredCards = cards.slice(0, 3);
   return (
     <section id={styles.featured}>
       <h2>Featured Work</h2>
       <div className={styles.cards}>
-        <Card
-          img={Img}
-          title="Chawla Media"
-          description="Designed in Figma, built with Gatsby and Strapi CMS, deployed to Netlify. This is the website for a small photography business located in Orlando, Florida."
-          live="/#live"
-          github="/#github"
-        />
-        <Card
-          img={Img}
-          title="Chawla Media"
-          description="Designed in Figma, built with Gatsby and Strapi CMS, deployed to Netlify. This is the website for a small photography business located in Orlando, Florida."
-          live="/#live"
-          github="/#github"
-        />
-        <Card
-          img={Img}
-          title="Chawla Media"
-          description="Designed in Figma, built with Gatsby and Strapi CMS, deployed to Netlify. This is the website for a small photography business located in Orlando, Florida."
-          live="/#live"
-          github="/#github"
-        />
+        {featuredCards.map((card, index) => {
+          const { img, title, description, live, github } = card;
+          return (
+            <Card
+              key={index}
+              img={img}
+              title={title}
+              description={description}
+              live={live}
+              github={github}
+            />
+          );
+        })}
       </div>
     </section>
   );

@@ -23,10 +23,11 @@ const WorkPage = () => {
       <div id={styles.work}>
         <h2>My Work</h2>
         <div className={styles.cards}>
-          {cards.map(card => {
+          {cards.map((card, index) => {
             const { img, title, description, live, github } = card;
             return (
               <Card
+                key={index}
                 img={img}
                 title={title}
                 description={description}

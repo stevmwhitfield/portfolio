@@ -1,11 +1,5 @@
 export const cards = [
-  // {
-  //     img: "",
-  //     title: "",
-  //     description: "",
-  //     live: "",
-  //     github: "",
-  // }
+  // First 3 cards will show as featured on home page
   {
     img: "https://res.cloudinary.com/dhzjdelhw/image/upload/v1633198316/Portfolio/Cards/chawla-media_xwdgrh.png",
     title: "Chawla Media",
