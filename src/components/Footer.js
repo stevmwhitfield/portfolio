@@ -42,7 +42,7 @@ const Footer = () => {
         </a>
       </div>
       <div id={styles.copyright}>
-        <p>Copyright &copy; 2021. All Rights Reserved.</p>
+        <p>Copyright &copy;2021 Steven Whitfield. All Rights Reserved.</p>
       </div>
     </footer>
   );
