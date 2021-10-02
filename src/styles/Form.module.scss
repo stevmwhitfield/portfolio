@@ -1,0 +1,99 @@
+@import "vars.module.scss";
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    background: $clr-dark;
+    border: 0.2rem solid $clr-primary;
+    border-radius: 0.4rem;
+    color: $clr-light;
+  }
+
+  label {
+    font-size: 1.8rem;
+    padding: 0.5em 0;
+  }
+
+  input {
+    font-size: 1.6rem;
+    padding: 0.5em 1em;
+    margin-bottom: 0.8rem;
+  }
+
+  textarea {
+    font-size: 1.6rem;
+    padding: 1em;
+    resize: vertical;
+  }
+
+  button {
+    background: $clr-primary;
+    border: 0.2rem solid $clr-primary;
+    border-radius: 0.4rem;
+
+    color: $clr-light;
+    font-size: 2.1rem;
+    font-family: $font-mono;
+    font-weight: 700;
+    text-align: center;
+
+    width: fit-content;
+    padding: 0.5em 1.5em;
+    margin: 2.4rem 0;
+    align-self: end;
+
+    transition: 0.3s all;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:active {
+      color: darken($clr-light, 20);
+      border-color: darken($clr-primary, 20);
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #form {
+    display: grid;
+    grid-template-areas:
+      "name email"
+      "message message"
+      "btn btn";
+    gap: 3.2rem;
+
+    input {
+      margin-bottom: 0;
+    }
+
+    #name-container {
+      grid-area: name;
+    }
+
+    #email-container {
+      grid-area: email;
+    }
+
+    #message-container {
+      grid-area: message;
+    }
+
+    button {
+      grid-area: btn;
+    }
+  }
+}

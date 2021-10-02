@@ -1,6 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+
 import Layout from "../components/Layout";
+import Divider from "../components/Divider";
+import Form from "../components/Form";
+import * as styles from "../styles/contact.module.scss";
 
 const ContactPage = () => {
   return (
@@ -14,7 +18,11 @@ const ContactPage = () => {
           href="https://stevenwhitfield.netlify.app/contact"
         />
       </Helmet>
-      <h1>Contact Page</h1>
+      <div id={styles.contact}>
+        <h2>Contact Me</h2>
+        <Form />
+      </div>
+      <Divider />
     </Layout>
   );
 };
