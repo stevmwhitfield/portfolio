@@ -18,5 +18,6 @@ module.exports = {
         sassRuleModulesTest: /\.module\.s(a|c)ss$/,
       },
     },
+    "gatsby-plugin-smoothscroll",
   ],
 };

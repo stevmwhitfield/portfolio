@@ -1,4 +1,5 @@
 import React from "react";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 import * as styles from "../styles/Hero.module.scss";
 
@@ -9,8 +10,7 @@ const Hero = () => {
       <h3>
         &lt; <span>Front End Developer</span> /&gt;
       </h3>
-      <button>
-        <a href="#skills"></a>
+      <button onClick={() => scrollTo("#skills")}>
         <i class="fas fa-chevron-down"></i>
       </button>
     </section>
