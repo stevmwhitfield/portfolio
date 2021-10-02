@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
@@ -8,6 +9,15 @@ import Divider from "../components/Divider";
 const HomePage = () => {
   return (
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Steven Whitfield</title>
+        <meta
+          name="description"
+          content="Steven Whitfield is a software developer specializing in front-end web development."
+        />
+        <link rel="canonical" href="https://stevenwhitfield.netlify.app" />
+      </Helmet>
       <Hero />
       <Divider />
       <Skills />
