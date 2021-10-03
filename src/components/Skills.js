@@ -38,15 +38,21 @@ const Skills = () => {
           <h3>Media Technology</h3>
           <div className={styles.icons}>
             <span>
+              <img
+                className={styles.icon}
+                src="https://res.cloudinary.com/dhzjdelhw/image/upload/v1633220823/Portfolio/AdobePhotoshopCC_icon_ns2qxz.svg"
+                alt="Adobe Photoshop icon"
+              />
+            </span>
+            <span>
+              <img
+                className={styles.icon}
+                src="https://res.cloudinary.com/dhzjdelhw/image/upload/v1633220823/Portfolio/AdobePremiereProCC_icon_axgcuv.svg"
+                alt="Adobe Premiere Pro icon"
+              />
+            </span>
+            <span>
               <i class="fab fa-figma"></i>
-            </span>
-            <span>
-              <i class="fas fa-parking">{/* Change to Photoshop icon */}</i>
-            </span>
-            <span>
-              <i class="fab fa-pied-piper-pp">
-                {/* Change to Premiere Pro icon */}
-              </i>
             </span>
           </div>
         </article>
