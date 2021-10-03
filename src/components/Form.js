@@ -9,7 +9,7 @@ const Form = () => {
       name="contact"
       action="/success"
       method="POST"
-      netlify
+      data-netlify="true"
     >
       <div id={styles.nameContainer}>
         <label>
