@@ -48,14 +48,6 @@ const Navigation = () => {
       >
         GitHub
       </a>
-      <a
-        className={`${styles.btn} ${styles.btnSolid}`}
-        href="/StevenWhitfield_Resume_2021.pdf"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Resume
-      </a>
     </>
   );
 };
