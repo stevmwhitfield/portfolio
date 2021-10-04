@@ -13,7 +13,7 @@ export const cards = [
     title: "Portfolio Website",
     description:
       "The website you are on right now. Designed in Figma and developed with Gatsby, styled with CSS (SCSS) modules, and deployed to Netlify.",
-    live: "https://stevenwhitfield.netlify.app/",
+    live: "https://stevenwhitfield.live/",
     github: "https://github.com/stevmwhitfield/portfolio",
   },
   {
