@@ -11,7 +11,7 @@ import * as styles from "../styles/work.module.scss";
 const WorkPage = () => {
   return (
     <Layout>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: "en"}}>
         <meta charSet="utf-8" />
         <title>My Work | Steven Whitfield</title>
         <meta
@@ -21,7 +21,7 @@ const WorkPage = () => {
         <link rel="canonical" href="https://stevenwhitfield.netlify.app/work" />
       </Helmet>
       <div id={styles.work}>
-        <h2>My Work</h2>
+        <h1>My Work</h1>
         <div className={styles.cards}>
           {cards.map((card, index) => {
             const { img, title, description, live, github } = card;

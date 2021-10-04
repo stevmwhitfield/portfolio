@@ -48,6 +48,14 @@ const Navigation = () => {
       >
         GitHub
       </a>
+      <a
+        className={`${styles.btn} ${styles.btnSolid}`}
+        href="https://www.linkedin.com/in/stevenmwhitfield"
+        target="_blank"
+        rel="noreferrer"
+      >
+        LinkedIn
+      </a>
     </>
   );
 };

@@ -18,12 +18,12 @@ const SuccessPage = () => {
 
   return (
     <Layout>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: "en"}}>
         <meta charSet="utf-8" />
         <title>Success | Steven Whitfield</title>
       </Helmet>
       <div className={styles.container}>
-        <h2>Successfully sent.</h2>
+        <h1>Successfully sent.</h1>
       </div>
       <Divider />
     </Layout>

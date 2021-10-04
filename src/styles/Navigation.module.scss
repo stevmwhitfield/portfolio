@@ -56,11 +56,11 @@
       padding: 0;
 
       .nav-item {
-        margin-right: 7.2rem;
+        margin-right: 3.2rem;
         width: auto;
 
         .nav-link {
-          font-size: 2.4rem;
+          font-size: 2.1rem;
           width: auto;
           transition: 0.3s ease;
 
@@ -89,10 +89,10 @@
     border: 4px solid $clr-primary;
     border-radius: 0.4rem;
     padding: 1.2rem 2.8rem;
-    margin: 0 1.6rem;
+    margin: 0 0.8rem;
 
     color: $clr-light;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     font-weight: 700;
     font-family: "Ubuntu Mono", monospace;
     transition: 0.3s all;
@@ -125,5 +125,20 @@
         color: darken($clr-light, 20);
       }
     }
+  }
+}
+
+@media screen and (min-width: 70em) {
+  #nav {
+    ul .nav-item {
+      margin-right: 7.2rem;
+      .nav-link {
+        font-size: 2.4rem;
+      }
+    }
+  } 
+  .btn {
+    font-size: 2.4rem;
+    margin: 0 1.6rem;
   }
 }

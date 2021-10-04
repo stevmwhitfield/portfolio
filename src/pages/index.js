@@ -10,7 +10,7 @@ import Divider from "../components/Divider";
 const HomePage = () => {
   return (
     <Layout>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: "en"}}>
         <meta charSet="utf-8" />
         <title>Steven Whitfield</title>
         <meta
@@ -21,9 +21,9 @@ const HomePage = () => {
       </Helmet>
       <Hero />
       <Divider />
-      <Skills />
-      <Divider />
       <Featured />
+      <Divider />
+      <Skills />
       <Divider />
     </Layout>
   );

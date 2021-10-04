@@ -9,7 +9,7 @@ import * as styles from "../styles/contact.module.scss";
 const ContactPage = () => {
   return (
     <Layout>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: "en"}}>
         <meta charSet="utf-8" />
         <title>Contact Me | Steven Whitfield</title>
         <meta name="description" content="Get in touch." />
@@ -19,7 +19,7 @@ const ContactPage = () => {
         />
       </Helmet>
       <div id={styles.contact}>
-        <h2>Contact Me</h2>
+        <h1>Contact Me</h1>
         <Form />
       </div>
       <Divider />

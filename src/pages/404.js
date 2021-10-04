@@ -9,7 +9,7 @@ import * as styles from "../styles/404.module.scss";
 const PageNotFound = () => {
   return (
     <Layout>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: "en"}}>
         <meta charSet="utf-8" />
         <title>Page Not Found | Steven Whitfield</title>
         <meta name="description" content="Error 404: Page not found." />

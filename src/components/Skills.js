@@ -5,7 +5,6 @@ import * as styles from "../styles/Skills.module.scss";
 const Skills = () => {
   return (
     <section id={styles.skills}>
-      <div id="skills"></div>
       <h2>Skills</h2>
       <div className={styles.flex}>
         <article>

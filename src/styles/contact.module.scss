@@ -1,14 +1,14 @@
 #contact {
   min-height: 90vh;
 
-  h2 {
+  h1 {
     text-align: center;
     padding-bottom: 1em;
   }
 }
 
 @media screen and (min-width: 48em) {
-  #contact h2 {
+  #contact h1 {
     padding: 1em;
   }
 }

@@ -5,7 +5,7 @@ import * as styles from "../styles/Card.module.scss";
 const Card = ({ img, title, description, live, github }) => {
   return (
     <div className={styles.card}>
-      <img src={img} alt={title} />
+      <img src={img} alt={title} loading="lazy"/>
       <div className={styles.content}>
         <h4>{title}</h4>
         <p>{description}</p>

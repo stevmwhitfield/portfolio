@@ -1,7 +1,7 @@
 #work {
   min-height: 90vh;
 
-  h2 {
+  h1 {
     text-align: center;
     padding-bottom: 1em;
   }
@@ -17,7 +17,7 @@
 }
 
 @media screen and (min-width: 48em) {
-  #work h2 {
+  #work h1 {
     padding: 1em;
   }
 }
