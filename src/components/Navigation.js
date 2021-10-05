@@ -42,19 +42,19 @@ const Navigation = () => {
       </nav>
       <a
         className={styles.btn}
-        href="https://github.com/stevmwhitfield"
-        target="_blank"
-        rel="noreferrer"
-      >
-        GitHub
-      </a>
-      <a
-        className={`${styles.btn} ${styles.btnSolid}`}
         href="https://www.linkedin.com/in/stevenmwhitfield"
         target="_blank"
         rel="noreferrer"
       >
         LinkedIn
+      </a>
+      <a
+        className={`${styles.btn} ${styles.btnSolid}`}
+        href="https://github.com/stevmwhitfield"
+        target="_blank"
+        rel="noreferrer"
+      >
+        GitHub
       </a>
     </>
   );
