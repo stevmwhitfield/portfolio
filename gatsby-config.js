@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-const siteUrl = "https://www.stevenwhitfield.live"
+const siteUrl = "https://www.stevenwhitfield.live";
 
 module.exports = {
   siteMetadata: {
@@ -13,12 +13,36 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        host: 'https://www.example.com',
-        sitemap: 'https://www.example.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "G-FSFHWRXFL2",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/404", "/success"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Defers execution of google analytics script after page load
+        defer: false,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        // defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.example.com",
+        sitemap: "https://www.example.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
     {
       resolve: "gatsby-plugin-sitemap",
@@ -33,20 +57,16 @@ module.exports = {
         }
       `,
         resolveSiteUrl: () => siteUrl,
-        resolvePages: ({
-          allSitePage: { nodes: allPages },
-        }) => {
-          
-
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           return allPages.map(page => {
-            return { ...page }
-          })
+            return { ...page };
+          });
         },
         serialize: ({ path, modifiedGmt }) => {
           return {
             url: path,
             lastmod: modifiedGmt,
-          }
+          };
         },
       },
     },

@@ -13,16 +13,6 @@ const WorkPage = () => {
     <Layout>
       <Helmet htmlAttributes={{ lang: "en" }}>
         <meta charSet="utf-8" />
-        {/* Global site tag (gtag.js) - Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-FSFHWRXFL2"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-FSFHWRXFL2');
-        </script>
         <meta
           name="description"
           content="A collection of my works and projects."
