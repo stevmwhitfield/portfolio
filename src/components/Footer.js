@@ -8,11 +8,14 @@ const Footer = () => {
       <div id={styles.about}>
         <h4>About Me</h4>
         <p>
-          My passion for development started in middle school. I had just
+          My passion for development started in high school. I had just
           discovered what programming was and jumped head-first into C++.
-          Needless to say I was intimidated and soon switched to Python to learn
-          the basics.
+          Needless to say I was intimidated and soon switched over to Python to
+          learn the basics. At first I thought I wanted to create games, but
+          then I found web development. I was thrilled with the possibilities it
+          presented and now I'm excited to learn more about it every day.
         </p>
+        <br />
         <p>
           When I'm not coding, you might find me playing video games with
           friends or learning a new musical piece on my keyboard.
