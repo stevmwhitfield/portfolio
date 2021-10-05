@@ -3,13 +3,13 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-const siteUrl = "https://www.stevenwhitfield.live";
 
 module.exports = {
   siteMetadata: {
     title: "Steven Whitfield",
     description:
       "Steven Whitfield is a software developer specializing in front-end web development.",
+    siteUrl: "https://www.stevenwhitfield.live",
   },
   plugins: [
     {
