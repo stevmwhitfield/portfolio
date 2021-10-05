@@ -1,19 +1,19 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 
 import Layout from "../components/Layout";
+import Head from "../components/Head";
 import Divider from "../components/Divider";
 import * as styles from "../styles/404.module.scss";
 
 const PageNotFound = () => {
   return (
     <Layout>
-      <Helmet htmlAttributes={{lang: "en"}}>
-        <meta charSet="utf-8" />
-        <title>Page Not Found | Steven Whitfield</title>
-        <meta name="description" content="Error 404: Page not found." />
-      </Helmet>
+      <Head
+        title="Page Not Found | Steven Whitfield"
+        description="Error 404: Page not found."
+        url="https://stevenwhitfield.live/404"
+      />
       <div className={styles.container}>
         <h1>Error 404</h1>
         <h3>Page not found.</h3>

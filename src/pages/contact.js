@@ -1,7 +1,7 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout";
+import Head from "../components/Head";
 import Divider from "../components/Divider";
 import Form from "../components/Form";
 import * as styles from "../styles/contact.module.scss";
@@ -9,15 +9,11 @@ import * as styles from "../styles/contact.module.scss";
 const ContactPage = () => {
   return (
     <Layout>
-      <Helmet htmlAttributes={{ lang: "en" }}>
-        <meta charSet="utf-8" />
-        <meta name="description" content="Get in touch." />
-        <link
-          rel="canonical"
-          href="https://stevenwhitfield.netlify.app/contact"
-        />
-        <title>Contact Me | Steven Whitfield</title>
-      </Helmet>
+      <Head
+        title="Contact Me | Steven Whitfield"
+        description="Get in touch."
+        url="https://stevenwhitfield.live/contact"
+      />
       <div id={styles.contact}>
         <h1>Contact Me</h1>
         <Form />
