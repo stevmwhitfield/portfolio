@@ -20,7 +20,7 @@ const SuccessPage = () => {
       <Head
         title="Form Success | Steven Whitfield"
         description=""
-        url="https://stevenwhitfield.live/success"
+        url="https://www.stevenwhitfield.live/success"
       />
       <div className={styles.container}>
         <h1>Successfully sent.</h1>

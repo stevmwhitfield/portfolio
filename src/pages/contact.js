@@ -12,7 +12,7 @@ const ContactPage = () => {
       <Head
         title="Contact Me | Steven Whitfield"
         description="Get in touch."
-        url="https://stevenwhitfield.live/contact"
+        url="https://www.stevenwhitfield.live/contact"
       />
       <div id={styles.contact}>
         <h1>Contact Me</h1>

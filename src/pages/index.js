@@ -13,7 +13,7 @@ const HomePage = () => {
       <Head
         title="Steven Whitfield - Front End Developer"
         description="Steven Whitfield is a software developer specializing in front-end web development."
-        url="https://stevenwhitfield.live/"
+        url="https://www.stevenwhitfield.live/"
       />
       <Hero />
       <Divider />

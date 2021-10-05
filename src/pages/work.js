@@ -14,7 +14,7 @@ const WorkPage = () => {
       <Head
         title="My Work | Steven Whitfield"
         description="A collection of my works and projects."
-        url="https://stevenwhitfield.live/work"
+        url="https://www.stevenwhitfield.live/work"
       />
       <div id={styles.work}>
         <h1>My Work</h1>
