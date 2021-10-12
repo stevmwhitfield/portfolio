@@ -18,7 +18,7 @@ export const cards = [
   },
   {
     img: "https://res.cloudinary.com/dhzjdelhw/image/upload/v1633384042/Portfolio/Cards/huge-fibonacci_foippc.png",
-    title: "HugeIntenger Fibonacci in C",
+    title: "HugeInteger Fibonacci in C",
     description:
       "Developed an algorithm to run the Fibonacci sequence in O(nk) time for any non-negative numerical input by using a HugeInteger structure. This was the second project in Florida Polytechnic University's Data Structures course.",
     live: "",
