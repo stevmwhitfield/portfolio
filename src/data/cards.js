@@ -5,7 +5,7 @@ export const cards = [
     title: "Chawla Media",
     description:
       "Designed in Figma, built with Gatsby and Strapi CMS, deployed to Netlify. This is the website for a small photography business located in Orlando, Florida.",
-    live: "https://chawla-media.netlify.app/",
+    live: "https://chawlamedia.com/",
     github: "https://github.com/stevmwhitfield/chawla-media-2-full",
   },
   {
