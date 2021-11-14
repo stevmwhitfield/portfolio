@@ -8,7 +8,7 @@ const Hero = () => {
     <section id={styles.hero}>
       <h1>Steven Whitfield</h1>
       <h3>
-        &lt; <span>Front End Developer</span> /&gt;
+        &lt; <span>Software Developer</span> /&gt;
       </h3>
       <button onClick={() => scrollTo("#featured")}>
         <i class="fas fa-chevron-down"></i>
