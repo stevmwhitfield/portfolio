@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "description": "Portfolio website.",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
